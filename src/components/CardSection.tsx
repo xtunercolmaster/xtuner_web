@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import DotTittle from './DotTittle';
 
 interface CardSectionProps {
     sectionTitle: string;
@@ -18,18 +19,7 @@ const CardSection: React.FC<CardSectionProps> = ({ sectionTitle, cardsData }) =>
 
     return (<div className="bg-dark-blue text-white py-12 px-4">
         <div className="max-w-screen-xl mx-auto">
-            <div className='flex flex-row justify-center items-center pb-12'>
-                {dotsArray.map((_, index) => (
-                    <div key={index + 'left'}
-                        className="w-2 h-2 bg-blur-purple rounded-full mx-1" />
-                ))}
-                <h2 className="text-center text-4xl font-bold px-6">{sectionTitle}</h2>
-                {dotsArray.map((_, index) => (
-                    <div key={index + 'right'}
-                        className="w-2 h-2 bg-blur-purple rounded-full mx-1" />
-                ))}
-
-            </div>
+        <DotTittle sectionTitle={sectionTitle} />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {cardsData.map((card, index) => (
                     <Card
