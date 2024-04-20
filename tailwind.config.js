@@ -4,7 +4,8 @@ export default {
     extend: {
       colors: {
         'custom-purple': '#69267f',
-        'blur-purple': '#A23AC4',
+        'blur-purple': '#875199',
+        'dark-blue': '#141438',
       },
       backgroundImage: {
         

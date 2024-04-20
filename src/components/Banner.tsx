@@ -27,13 +27,12 @@ const Banner = () => {
       </div>
 
       {/* Image Section */}
-      <div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[400px] lg:h-[400px] xl:w-[600px] xl:h-[600px] 2xl:w-[800px] 2xl:h-[800px] relative overflow-hidden mt-4 lg:mt-0">
+      <div className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] xl:w-[500px] xl:h-[500px] 2xl:w-[700px] 2xl:h-[700px] relative overflow-hidden mt-4 lg:mt-0">
         <div
           className="absolute top-0 left-0 w-full h-full bg-blur-purple opacity-50 rounded-full z-0"
-          style={{ clipPath: 'circle(35% at 50% 50%)'}} 
+          style={{ clipPath: 'circle(35% at 50% 60%)'}} // Adjust the y-axis value here
         ></div>
-        <img src={banner1} alt="hero image" className="pl-[50px] absolute object-cover w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
-          style={{ clipPath: 'inset(0 10% 0 0)'}} />
+        <img src={banner1} alt="hero image" className="absolute object-cover w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"/>
       </div>
     </div>
   );
