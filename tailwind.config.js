@@ -8,13 +8,13 @@ export default {
         'dark-blue': '#141438',
       },
       backgroundImage: {
-        
+
       },
     },
   },
   variants: {
     extend: {
-      borderColor: ['hover', 'focus'], 
+      borderColor: ['hover', 'focus'],
     },
   },
   plugins: [],

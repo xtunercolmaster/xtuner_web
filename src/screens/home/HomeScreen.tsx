@@ -3,24 +3,24 @@ import { cardImg1, cardImg2, cardImg3 } from '../../assets/images';
 import strings from '../../constants/strings';
 import Banner from '../../components/Banner';
 import CardSection from '../../components/CardSection';
-
+import DownloadSection from '../../components/DownloadSection';
 
 const HomeScreen = () => {
 
     const cardsData = [
         {
-            title: 'Lorem ipsum dolor sit',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis, sapien lectus placerat. A, metus varius rhoncus, mattis.',
+            title: strings.CardTitle1,
+            content: strings.CardTitle1,
             imageUrl: cardImg1,
         },
         {
-            title: 'Lorem ipsum dolor sit',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis, sapien lectus placerat. A, metus varius rhoncus, mattis.',
+            title: strings.CardTitle2,
+            content: strings.CardTitle2,
             imageUrl: cardImg2,
         },
         {
-            title: 'Lorem ipsum dolor sit',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis, sapien lectus placerat. A, metus varius rhoncus, mattis.',
+            title: strings.CardTitle3,
+            content: strings.CardTitle3,
             imageUrl: cardImg3,
         },
     ];
@@ -32,6 +32,7 @@ const HomeScreen = () => {
                 sectionTitle="Beneficios Xtuner"
                 cardsData={cardsData}
             />
+            <DownloadSection />
         </div>
     );
 };
