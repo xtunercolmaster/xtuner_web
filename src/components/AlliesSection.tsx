@@ -18,14 +18,14 @@ const AlliesSection: React.FC<AlliesSectionProps> = ({ sectionTitle }) => {
         <div className="flex flex-col items-center w-full text-white p-8 bg-dark-blue">
 
             {/* Title */}
-            <div className="w-full text-center mb-8">
+            <div className="w-full text-center mt-12 mb-6">
                 <DotTittle sectionTitle={sectionTitle} />
             </div>
 
             {/* Logos Container */}
             <div className="flex justify-center items-center flex-wrap">
                 {logos.map((logo, index) => (
-                    <div key={index} className="m-10 mb-20">
+                    <div key={index} className="m-10 lg:mb-20">
                         <img src={logo.src} alt={logo.alt} className="h-36" style={{ borderRadius: '5px' }}/>
                     </div>
                 ))}

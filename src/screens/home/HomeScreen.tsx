@@ -6,6 +6,7 @@ import CardSection from '../../components/CardSection';
 import DownloadSection from '../../components/DownloadSection';
 import ServicesSection from '../../components/ServicesSection';
 import AlliesSection from '../../components/AlliesSection';
+import Footer from '../../components/Footer';
 
 const HomeScreen = () => {
 
@@ -41,6 +42,7 @@ const HomeScreen = () => {
             <AlliesSection 
                 sectionTitle="Emisoras Vinculadas"
             />
+            <Footer />
         </div>
     );
 };

@@ -8,7 +8,7 @@ const DownloadSection = () => {
             }}>
             {/* Text Section */}
             <div className="flex-1 flex flex-col justify-center items-center text-center lg:items-start lg:text-left lg:pl-[110px]">
-                <h1 className="text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl mb-8">Descarga Nuestra App!</h1>
+                <h1 className="text-3xl md:text-3xl lg:text-4xl mb-8">Descarga Nuestra App!</h1>
                 <p className="mb-6 text-sm lg:text-base 2xl:text-lg max-w-md">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet faucibus ipsum sit lacus pulvinar libero pretium. Odio facilisis diam quam donec ipsum. Augue bibendum pellentesque consequat cursus ac.
                 </p>
