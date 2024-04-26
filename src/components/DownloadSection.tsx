@@ -2,7 +2,7 @@ import { xtunerApp, backgroundDownload } from '../assets/images';
 
 const DownloadSection = () => {
     return (
-        <div className="flex flex-col lg:flex-row justify-center items-center w-full text-white p-8 min-h-screen bg-cover bg-no-repeat bg-custom-purple"
+        <div className="flex flex-col lg:flex-row justify-center items-center w-full text-white p-8 min-h-screen bg-cover bg-no-repeat"
             style={{
                 backgroundImage: `linear-gradient(rgba(105,38,117, 0.9), rgba(20,20,56, 0.9)), url(${backgroundDownload})`
             }}>

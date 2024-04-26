@@ -8,6 +8,12 @@ import cardImg1 from './card.img.1.png';
 import cardImg2 from './card.img.2.png'; 
 import cardImg3 from './card.img.3.png'; 
 import xtunerApp from './xtuner.app.png'; 
+import serviceImg from './service.img.png'; 
+import candela from './candela.png';
+import los40 from './los40.png';  
+import olimpica from './olimpica.png'; 
+import radioactiva from './radioactiva.png'; 
+import vibra from './vibra.png'; 
 
 // Exporting images
 export {
@@ -19,5 +25,11 @@ export {
     cardImg1,
     cardImg2,
     cardImg3,
-    xtunerApp
+    xtunerApp,
+    serviceImg,
+    candela,
+    los40,
+    olimpica,
+    radioactiva,
+    vibra,
 };

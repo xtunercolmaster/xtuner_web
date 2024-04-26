@@ -4,6 +4,8 @@ import strings from '../../constants/strings';
 import Banner from '../../components/Banner';
 import CardSection from '../../components/CardSection';
 import DownloadSection from '../../components/DownloadSection';
+import ServicesSection from '../../components/ServicesSection';
+import AlliesSection from '../../components/AlliesSection';
 
 const HomeScreen = () => {
 
@@ -33,6 +35,12 @@ const HomeScreen = () => {
                 cardsData={cardsData}
             />
             <DownloadSection />
+            <ServicesSection 
+                sectionTitle="Servicios"
+            />
+            <AlliesSection 
+                sectionTitle="Emisoras Vinculadas"
+            />
         </div>
     );
 };
