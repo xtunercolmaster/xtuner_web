@@ -1,14 +1,4 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { banner1, banner2, backgroundBanner } from '../assets/images';
-
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
+import { banner1, backgroundBanner } from '../assets/images';
 
 const Banner = () => {
   return (

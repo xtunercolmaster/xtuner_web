@@ -25,7 +25,7 @@ const AlliesSection: React.FC<AlliesSectionProps> = ({ sectionTitle }) => {
             {/* Logos Container */}
             <div className="flex justify-center items-center flex-wrap">
                 {logos.map((logo, index) => (
-                    <div key={index} className="m-10 lg:mb-20">
+                    <div key={index} className="m-3 lg:m-6 xl:m-10 lg:mb-20">
                         <img src={logo.src} alt={logo.alt} className="h-36" style={{ borderRadius: '5px' }}/>
                     </div>
                 ))}
