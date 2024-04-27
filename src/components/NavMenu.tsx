@@ -55,12 +55,12 @@ const NavMenu: React.FC<NavMenuProps> = ({ }) => {
                                 onClickItem={navigateToScreen} />
                         ))}
                     </div>
-                    <div className="flex flex-row gap-6 items-center">
-                        <a href="https://www.facebook.com/" target='blank' className="text-white xl:text-lg 3xl:text-4xl"><FaFacebook /></a>
-                        <a href="https://www.instagram.com/" target='blank' className="text-white xl:text-lg 3xl:text-4xl"><FaInstagram /></a>
-                        <a href="https://twitter.com/" target='blank' className="text-white xl:text-lg 3xl:text-4xl"><FaTwitter /></a>
-                        <a href="https://www.linkedin.com/" target='blank' className="text-white xl:text-lg 3xl:text-4xl"><FaLinkedinIn /></a>
-                        <a href="https://www.youtube.com/" target='blank' className="text-white xl:text-lg 3xl:text-4xl"><FaYoutube /></a>
+                    <div className="flex flex-row gap-6 items-center text-white xl:text-lg 3xl:text-4xl">
+                        <a href="https://www.facebook.com/" target='blank'><FaFacebook /></a>
+                        <a href="https://www.instagram.com/" target='blank'><FaInstagram /></a>
+                        <a href="https://twitter.com/" target='blank'><FaTwitter /></a>
+                        <a href="https://www.linkedin.com/" target='blank'><FaLinkedinIn /></a>
+                        <a href="https://www.youtube.com/" target='blank'><FaYoutube /></a>
                     </div>
                 </div>
             </div>
