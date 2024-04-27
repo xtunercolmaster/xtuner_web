@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ title, content, imageUrl }) => {
                 <div className="flex justify-center mb-2">
                     <div className="w-32 h-1 rounded-full bg-blur-purple"></div>
                 </div>
-                <p className="text-white-600 text-lg 3xl:text-xl">
+                <p className="text-white-600 text-lg xl:text-xl 3xl:text-2xl">
                     {content}
                 </p>
             </div>
