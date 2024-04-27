@@ -4,30 +4,32 @@ import { GrLocation } from "react-icons/gr";
 import { CiMail } from "react-icons/ci";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 
-import { logo1 } from '../assets/images'; // Make sure this is the correct path and way to import images
+import { logo1 } from '../assets/images'; 
+
+import strings from '../constants/strings';
 
 const Footer = () => {
   return (
     <div className="bg-gradient-to-b from-dark-blue to-custom-purple text-white p-4">
       <div className="container mx-auto w-[90%]">
         {/* Icon on the top left corner */}
-        <div className="flex w-full mb-4">
+        <div className="flex w-full mb-10">
           <img src={logo1} alt="Logo" className="h-16 w-92" />
         </div>
 
         {/* Two columns layout */}
         <div className="flex flex-row w-full">
           {/* First column */}
-          <div className="flex flex-col space-y-2 w-3/10">
-            <div>Element 1</div>
-            <div>Element 2</div>
-            <div>Element 3</div>
-            <div>Element 4</div>
-            <div>Element 5</div>
+          <div className="flex flex-col space-y-2 w-[30%] xl:text-2xl mb-10">
+            <div>{strings.home}</div>
+            <div>{strings.aboutUs}</div>
+            <div>{strings.services}</div>
+            <div>{strings.allies}</div>
+            <div>{strings.contactUs}</div>
           </div>
 
           {/* Second column */}
-          <div className="flex flex-col space-y-2 w-7/10">
+          <div className="flex flex-col space-y-2 w-[70%]">
             {/* First row with sections */}
             <div className="flex items-center">
               <p className="flex-1">Text</p>
