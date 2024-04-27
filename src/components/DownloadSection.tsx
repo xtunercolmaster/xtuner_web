@@ -1,4 +1,5 @@
 import { xtunerApp, backgroundDownload } from '../assets/images';
+import strings from '../constants/strings';
 
 const DownloadSection = () => {
     return (
@@ -8,12 +9,12 @@ const DownloadSection = () => {
             }}>
             {/* Text Section */}
             <div className="flex-1 flex flex-col justify-center items-center text-center lg:items-start lg:text-left lg:pl-16 xl:pl-40 3xl:pl-52">
-                <h1 className="mb-8 text-3xl md:text-3xl lg:text-4xl 3xl:text-5xl">Descarga Nuestra App!</h1>
+                <h1 className="mb-8 text-3xl md:text-3xl lg:text-4xl 3xl:text-5xl">{strings.downloadTittle}</h1>
                 <p className="mb-8 text-sm lg:text-base xl:text-xl 3xl:text-2xl max-w-md">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet faucibus ipsum sit lacus pulvinar libero pretium. Odio facilisis diam quam donec ipsum. Augue bibendum pellentesque consequat cursus ac.
+                    {strings.downloadContent}                
                 </p>
                 <button className="text-xl xl:text-2xl bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out w-48 h-14 xl:w-56">
-                    Descarga Aqui
+                    {strings.downloadHere}
                 </button>
             </div>
 
@@ -23,7 +24,7 @@ const DownloadSection = () => {
                     className="absolute top-0 left-0 w-full h-full bg-blur-purple opacity-50 rounded-full z-0"
                     style={{ clipPath: 'circle(35% at 50% 50%)' }}
                 ></div>
-                <img src={xtunerApp} alt="hero image" className="absolute object-cover w-[100%] h-[80%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" />
+                <img src={xtunerApp} alt={strings.altForDowloadSection} className="absolute object-cover w-[100%] h-[80%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" />
             </div>
         </div>
     );

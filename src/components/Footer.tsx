@@ -1,48 +1,72 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { CiLocationOn } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+
+import { logo1 } from '../assets/images';
+
+import strings from '../constants/strings';
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-800 text-white">
-      <div className="container mx-auto px-4 py-6">
-        <div className="flex justify-between">
-          {/* Left Side - Navigation */}
-          <div className="flex flex-col">
-            <span className="font-bold text-xl mb-2">XTuner</span>
-            <nav>
-              <ul>
-                <li className="mb-1"><a href="#home">Inicio</a></li>
-                <li className="mb-1"><a href="#about">Quienes somos</a></li>
-                <li className="mb-1"><a href="#services">Servicios</a></li>
-                <li className="mb-1"><a href="#allies">Aliados</a></li>
-                <li className="mb-1"><a href="#contact">Contactanos</a></li>
-              </ul>
-            </nav>
-          </div>
-          
-          {/* Center - Contact Info */}
-          <div className="flex flex-col">
-            <span className="font-bold text-lg mb-2">Contactanos</span>
-            <p className="flex items-center mb-1"><span className="mr-2">📍</span>101 Browning Lane Corning, NY 14830</p>
-            <p className="flex items-center mb-1"><span className="mr-2">✉️</span>xtunerCOL@gmail.com</p>
-            <p className="flex items-center"><span className="mr-2">📞</span>607-937-7303</p>
+    <div className="bg-gradient-to-b from-dark-blue to-custom-purple text-white p-4">
+      <div className="container mx-auto w-[90%] md:w-[85%] 3xl:w-[80%]">
+        {/* Icon on the top left corner */}
+        <div className="flex w-full mb-8 md:mb-16">
+          <img src={logo1} alt="Logo" className="h-12 md:h-16 w-auto" />
+        </div>
+
+        {/* Two columns layout */}
+        <div className="flex flex-col md:flex-row w-full">
+          {/* First column */}
+          <div className="flex flex-col w-full md:w-3/12 space-y-2 md:space-y-4 text-lg md:text-2xl mb-4 md:mb-16">
+            <div>{strings.home}</div>
+            <div>{strings.aboutUs}</div>
+            <div>{strings.services}</div>
+            <div>{strings.allies}</div>
+            <div>{strings.contactUs}</div>
           </div>
 
-          {/* Right Side - Social Media Links */}
-          <div className="flex flex-col">
-            <span className="font-bold text-lg mb-2">Siguenos</span>
-            <div className="flex">
-              <a href="#facebook" className="mr-2"><FaFacebookF /></a>
-              <a href="#instagram" className="mr-2"><FaInstagram /></a>
-              <a href="#twitter" className="mr-2"><FaTwitter /></a>
-              <a href="#linkedin" className="mr-2"><FaLinkedinIn /></a>
-              <a href="#youtube"><FaYoutube /></a>
+          {/* Second column */}
+          <div className="flex flex-col w-full md:space-y-2 text-lg md:text-xl">
+            {/* First row with sections */}
+            <div className="flex flex-col md:flex-row items-center md:mb-10">
+              <p className="w-full md:w-[20%] text-xl md:text-2xl font-bold">
+                {strings.contactUs}
+              </p>
+              <div className='w-full md:w-[80%] flex flex-col my-5 md:flex-row md:items-center md:justify-between gap-4 md:gap-6'>
+                <div className="flex items-center space-x-2">
+                  <CiLocationOn className='text-4xl md:text-5xl' />
+                  <span className="whitespace-pre-wrap">{strings.xtunerAddress}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CiMail className='text-xl md:text-5xl font-bold' />
+                  <span>{strings.xtunerEmail}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <IoPhonePortraitOutline className='text-3xl md:text-4xl font-bold' />
+                  <span>{strings.xtunerPhone}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Second row with two sections */}
+            <div className="flex flex-col md:flex-row">
+              <p className="w-full md:w-[20%] text-xl md:text-2xl font-bold mb-5">{strings.followUs}</p>
+              <div className="flex items-center justify-start mb-10 xl:ml-2 md:justify-end space-x-4 md:space-x-8 text-2xl md:text-3xl">
+                <a href="https://www.facebook.com/" target='blank'><FaFacebook /></a>
+                <a href="https://www.instagram.com/" target='blank'><FaInstagram /></a>
+                <a href="https://twitter.com/" target='blank'><FaTwitter /></a>
+                <a href="https://www.linkedin.com/" target='blank'><FaLinkedinIn /></a>
+                <a href="https://www.youtube.com/" target='blank'><FaYoutube /></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
-}
+};
 
 export default Footer;
