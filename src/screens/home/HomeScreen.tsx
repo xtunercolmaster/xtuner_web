@@ -29,7 +29,7 @@ const HomeScreen = () => {
     ];
 
     return (
-        <div className="flex flex-col h-screen overflow-auto">
+        <div className="flex flex-col h-screen w-screen overflow-auto">
             <Banner />
             <CardSection
                 sectionTitle="Beneficios Xtuner"
