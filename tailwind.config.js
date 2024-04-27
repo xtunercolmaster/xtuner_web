@@ -10,6 +10,9 @@ export default {
       backgroundImage: {
 
       },
+      screens: {
+        '3xl': '1600px',
+      }
     },
   },
   variants: {
