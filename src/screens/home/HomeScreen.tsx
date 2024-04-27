@@ -12,18 +12,18 @@ const HomeScreen = () => {
 
     const cardsData = [
         {
-            title: strings.CardTitle1,
-            content: strings.CardTitle1,
+            title: strings.cardTitle1,
+            content: strings.cardTitle1,
             imageUrl: cardImg1,
         },
         {
-            title: strings.CardTitle2,
-            content: strings.CardTitle2,
+            title: strings.cardTitle2,
+            content: strings.cardTitle2,
             imageUrl: cardImg2,
         },
         {
-            title: strings.CardTitle3,
-            content: strings.CardTitle3,
+            title: strings.cardTitle3,
+            content: strings.cardTitle3,
             imageUrl: cardImg3,
         },
     ];
@@ -32,15 +32,15 @@ const HomeScreen = () => {
         <div className="flex flex-col h-screen w-screen overflow-auto">
             <Banner />
             <CardSection
-                sectionTitle="Beneficios Xtuner"
+                sectionTitle={strings.cardSectionTittle}
                 cardsData={cardsData}
             />
             <DownloadSection />
             <ServicesSection 
-                sectionTitle="Servicios"
+                sectionTitle={strings.servicesSectionTittle}
             />
             <AlliesSection 
-                sectionTitle="Emisoras Vinculadas"
+                sectionTitle={strings.alliesSectionTittle}
             />
             <Footer />
         </div>

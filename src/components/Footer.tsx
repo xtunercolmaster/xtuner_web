@@ -1,48 +1,69 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { GrLocation } from "react-icons/gr";
+import { CiMail } from "react-icons/ci";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+
+import { logo1 } from '../assets/images'; // Make sure this is the correct path and way to import images
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-800 text-white">
-      <div className="container mx-auto px-4 py-6">
-        <div className="flex justify-between">
-          {/* Left Side - Navigation */}
-          <div className="flex flex-col">
-            <span className="font-bold text-xl mb-2">XTuner</span>
-            <nav>
-              <ul>
-                <li className="mb-1"><a href="#home">Inicio</a></li>
-                <li className="mb-1"><a href="#about">Quienes somos</a></li>
-                <li className="mb-1"><a href="#services">Servicios</a></li>
-                <li className="mb-1"><a href="#allies">Aliados</a></li>
-                <li className="mb-1"><a href="#contact">Contactanos</a></li>
-              </ul>
-            </nav>
-          </div>
-          
-          {/* Center - Contact Info */}
-          <div className="flex flex-col">
-            <span className="font-bold text-lg mb-2">Contactanos</span>
-            <p className="flex items-center mb-1"><span className="mr-2">📍</span>101 Browning Lane Corning, NY 14830</p>
-            <p className="flex items-center mb-1"><span className="mr-2">✉️</span>xtunerCOL@gmail.com</p>
-            <p className="flex items-center"><span className="mr-2">📞</span>607-937-7303</p>
+    <div className="bg-gradient-to-b from-dark-blue to-custom-purple text-white p-4">
+      <div className="container mx-auto w-[90%]">
+        {/* Icon on the top left corner */}
+        <div className="flex w-full mb-4">
+          <img src={logo1} alt="Logo" className="h-16 w-92" />
+        </div>
+
+        {/* Two columns layout */}
+        <div className="flex flex-row w-full">
+          {/* First column */}
+          <div className="flex flex-col space-y-2 w-3/10">
+            <div>Element 1</div>
+            <div>Element 2</div>
+            <div>Element 3</div>
+            <div>Element 4</div>
+            <div>Element 5</div>
           </div>
 
-          {/* Right Side - Social Media Links */}
-          <div className="flex flex-col">
-            <span className="font-bold text-lg mb-2">Siguenos</span>
+          {/* Second column */}
+          <div className="flex flex-col space-y-2 w-7/10">
+            {/* First row with sections */}
+            <div className="flex items-center">
+              <p className="flex-1">Text</p>
+              <div className="border-l border-gray-400 h-full mx-2"></div>
+              <div className="flex items-center space-x-2">
+                <GrLocation />
+                <span>Text</span>
+              </div>
+              <div className="border-l border-gray-400 h-full mx-2"></div>
+              <div className="flex items-center space-x-2">
+                <CiMail />
+                <span>Text</span>
+              </div>
+              <div className="border-l border-gray-400 h-full mx-2"></div>
+              <div className="flex items-center space-x-2">
+                <IoPhonePortraitOutline />
+                <span>Text</span>
+              </div>
+            </div>
+
+            {/* Second row with two sections */}
             <div className="flex">
-              <a href="#facebook" className="mr-2"><FaFacebookF /></a>
-              <a href="#instagram" className="mr-2"><FaInstagram /></a>
-              <a href="#twitter" className="mr-2"><FaTwitter /></a>
-              <a href="#linkedin" className="mr-2"><FaLinkedinIn /></a>
-              <a href="#youtube"><FaYoutube /></a>
+              <p className="flex-1">More Text</p>
+              <div className="flex items-center space-x-2">
+                <FaFacebook />
+                <FaInstagram />
+                <FaTwitter />
+                <FaLinkedinIn />
+                <FaYoutube />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
-}
+};
 
 export default Footer;

@@ -2,6 +2,7 @@
 import React from 'react';
 import { serviceImg } from '../assets/images';
 import DotTittle from './DotTittle';
+import strings from '../constants/strings';
 
 interface ServicesSectionProps {
     sectionTitle: string;
@@ -28,12 +29,12 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ sectionTitle }) => {
 
                 {/* Text Section */}
                 <div className="flex-1 flex flex-col xl:ml-18 justify-center items-center text-center lg:items-start lg:text-left xl:ml-[120px]">
-                    <h1 className="mb-8 text-3xl md:text-3xl lg:text-4xl 3xl:text-5xl">Más acerca de los tuyos</h1>
+                    <h1 className="mb-8 text-3xl md:text-3xl lg:text-4xl 3xl:text-5xl">{strings.servicesTittle}</h1>
                     <p className="mb-8 text-sm lg:text-base xl:text-xl 3xl:text-2xl max-w-md">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet faucibus ipsum sit lacus pulvinar libero pretium. Odio facilisis diam quam donec ipsum. Augue bibendum pellentesque consequat cursus ac.
+                        {strings.servicesContent}
                     </p>
                     <button className="text-xl xl:text-2xl bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out w-48 h-14 xl:w-56">
-                        Conoce mas
+                        {strings.knowMore}
                     </button>
                 </div>
             </div>

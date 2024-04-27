@@ -1,4 +1,5 @@
 import { candela, vibra, los40, olimpica, radioactiva } from '../assets/images';
+import strings from '../constants/strings';
 import DotTittle from './DotTittle';
 
 interface AlliesSectionProps {
@@ -7,11 +8,11 @@ interface AlliesSectionProps {
 
 const AlliesSection: React.FC<AlliesSectionProps> = ({ sectionTitle }) => {
     const logos = [
-        { src: candela, alt: "Candela" },
-        { src: vibra, alt: "Vibra" },
-        { src: los40, alt: "Los 40" },
-        { src: olimpica, alt: "Olimpica Barranquilla" },
-        { src: radioactiva, alt: "Radioacktiva" },
+        { src: candela, alt: strings.candela },
+        { src: vibra, alt: strings.vibra },
+        { src: los40, alt: strings.los40 },
+        { src: olimpica, alt: strings.olimpica },
+        { src: radioactiva, alt: strings.radioactiva },
     ];
 
     return (
