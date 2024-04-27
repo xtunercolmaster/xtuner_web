@@ -15,8 +15,6 @@ interface MenuItemProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({ item, onClickItem }) => {
 
-    // const [isSelected, setIsSelected] = useState(true);
-
     const handleOnClickItem = (item: MenuItemData) => {
 
         if (item.route) {
@@ -27,7 +25,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item, onClickItem }) => {
     return (
         <button className='' onClick={() => handleOnClickItem(item)}>
             <div className='flex flex-col gap-[8px]'>
-                <p className="text-xl font-normal text-white">{item.name}</p>
+                <p className={`text-xl text-white ${item.isSelected ? 'font-bold' : 'font-normal'}`}>{item.name}</p>
                 {item.isSelected && <div className='w-full h-[4px] bg-secondary-purple rounded' />}
             </div>
         </button>
