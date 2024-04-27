@@ -1,6 +1,10 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 import MenuItem, { MenuItemData } from '../../components/MenuItem';
 import strings from '../../constants/strings';
+import { logo1 } from '../../assets/images';
+
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+
 
 const MainScreen = () => {
 
@@ -21,14 +25,28 @@ const MainScreen = () => {
     const Menu = ({ items }: { items: MenuItemData[] }) => {
         return (
             <nav className='absolute'>
-                <div className='flex flex-row gap-6'>
-                    {items.map((item: MenuItemData) => (
-                        <MenuItem
-                            key={item.id}
-                            item={item}
-                            onClickItem={navigateToScreen} />
-                    ))}
+
+                <div className="flex flex-row pt-[20px] px-[120px] items-center gap-20">
+                    <img className='w-[180px] h-[48px]' src={logo1} alt="NF" />
+                    <div className='flex flex-row gap-6'>
+                        {items.map((item: MenuItemData) => (
+                            <MenuItem
+                                key={item.id}
+                                item={item}
+                                onClickItem={navigateToScreen} />
+                        ))}
+                    </div>
+                    <div className="flex">
+                        <a href="#facebook" className="mr-2"><FaFacebook /></a>
+                        <a href="#instagram" className="mr-2"><FaInstagram /></a>
+                        <a href="#twitter" className="mr-2"><FaTwitter /></a>
+                        <a href="#linkedin" className="mr-2"><FaLinkedinIn /></a>
+                        <a href="#youtube"><FaYoutube /></a>
+                    </div>
                 </div>
+
+
+
             </nav>
         );
     };
