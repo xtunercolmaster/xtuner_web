@@ -1,25 +1,22 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 import MenuItem, { MenuItemData } from '../../components/MenuItem';
-
-
+import strings from '../../constants/strings';
 
 const MainScreen = () => {
 
     const navigate = useNavigate();
 
-
     const menuData = [
-        { id: 1, name: "Inicio", route: "home" },
-        { id: 2, name: "Quienes somos", route: "aboutus" },
-        { id: 3, name: "Servicios", route: "services" },
-        { id: 4, name: "Aliados", route: "allies" },
-        { id: 5, name: "Contactanos", route: "contactus" },
+        { id: 1, name: strings.home, route: "home" },
+        { id: 2, name: strings.aboutUs, route: "aboutus" },
+        { id: 3, name: strings.services, route: "services" },
+        { id: 4, name: strings.allies, route: "allies" },
+        { id: 5, name: strings.contactUs, route: "contactus" },
     ]
 
     const navigateToScreen = (route: string) => {
         navigate(route);
     }
-
 
     const Menu = ({ items }: { items: MenuItemData[] }) => {
         return (
@@ -43,8 +40,9 @@ const MainScreen = () => {
 
             <Menu items={menuData} />
 
-
             <Outlet />
+
+
         </div>
 
     );
