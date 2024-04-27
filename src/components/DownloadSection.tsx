@@ -7,7 +7,7 @@ const DownloadSection = () => {
                 backgroundImage: `linear-gradient(rgba(105,38,117, 0.9), rgba(20,20,56, 0.9)), url(${backgroundDownload})`
             }}>
             {/* Text Section */}
-            <div className="flex-1 flex flex-col justify-center items-center text-center lg:items-start lg:text-left lg:pl-[110px]">
+            <div className="flex-1 flex flex-col justify-center items-center text-center lg:items-start lg:text-left lg:pl-16 xl:pl-56">
                 <h1 className="text-3xl md:text-3xl lg:text-4xl mb-8">Descarga Nuestra App!</h1>
                 <p className="mb-6 text-sm lg:text-base 2xl:text-lg max-w-md">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet faucibus ipsum sit lacus pulvinar libero pretium. Odio facilisis diam quam donec ipsum. Augue bibendum pellentesque consequat cursus ac.
@@ -18,7 +18,7 @@ const DownloadSection = () => {
             </div>
 
             {/* Image Section */}
-            <div className="w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] xl:w-[500px] xl:h-[500px] 2xl:w-[700px] 2xl:h-[700px] relative overflow-hidden mt-4 lg:mt-0">
+            <div className="w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[300px] md:h-[300px] lg:w-[450px] lg:h-[450px] xl:w-[600px] xl:h-[600px] 2xl:w-[700px] 2xl:h-[700px] relative overflow-hidden mt-4 lg:mt-0 xl:mr-10">
                 <div
                     className="absolute top-0 left-0 w-full h-full bg-blur-purple opacity-50 rounded-full z-0"
                     style={{ clipPath: 'circle(35% at 50% 50%)' }}
