@@ -3,8 +3,8 @@ const ContactUsScreen = () => {
 
 
     return (
-        <div className="flex flex-col h-screen overflow-auto">
-            <p>Contact us screen</p>
+        <div className="flex flex-col w-screen h-screen overflow-auto bg-custom-purple pt-[100px]">
+            <p className="text-white px-20">Contact us screen</p>
         </div>
     );
 };

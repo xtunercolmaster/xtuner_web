@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 export interface MenuItemData {
     id: number;
     name: string;
     route: string;
+    isSelected: boolean;
 }
 
 interface MenuItemProps {
@@ -14,6 +15,7 @@ interface MenuItemProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({ item, onClickItem }) => {
 
+    // const [isSelected, setIsSelected] = useState(true);
 
     const handleOnClickItem = (item: MenuItemData) => {
 
@@ -23,11 +25,12 @@ const MenuItem: React.FC<MenuItemProps> = ({ item, onClickItem }) => {
     };
 
     return (
-        <div>
-            <button className='w-full flex flex-row justify-between items-center' onClick={() => handleOnClickItem(item)}>
+        <button className='' onClick={() => handleOnClickItem(item)}>
+            <div className='flex flex-col gap-[8px]'>
                 <p className="text-xl font-normal text-white">{item.name}</p>
-            </button>
-        </div>
+                {item.isSelected && <div className='w-full h-[4px] bg-secondary-purple rounded' />}
+            </div>
+        </button>
     );
 };
 

@@ -5,6 +5,7 @@ export default {
       colors: {
         'custom-purple': '#69267f',
         'blur-purple': '#875199',
+        'secondary-purple': '#CB5AF0',
         'dark-blue': '#141438',
       },
       backgroundImage: {
