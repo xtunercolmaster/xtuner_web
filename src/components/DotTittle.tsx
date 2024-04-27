@@ -12,7 +12,7 @@ const TitleSection: React.FC<TitleSectionProps> = ({ sectionTitle }) => {
             {dotsArray.map((_, index) => (
                 <div key={index + 'left'} className="w-2 h-2 bg-blur-purple rounded-full mx-1" />
             ))}
-            <h2 className="text-center text-4xl font-bold px-6">{sectionTitle}</h2>
+            <h2 className="text-center text-4xl 3xl:text-5xl font-bold px-6">{sectionTitle}</h2>
             {dotsArray.map((_, index) => (
                 <div key={index + 'right'} className="w-2 h-2 bg-blur-purple rounded-full mx-1" />
             ))}

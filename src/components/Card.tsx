@@ -13,11 +13,11 @@ const Card: React.FC<CardProps> = ({ title, content, imageUrl }) => {
                 <img src={imageUrl} alt="Content" className="rounded-lg h-60 w-full object-cover" />
             </div>
             <div className="p-4 text-center">
-                <h3 className="font-bold text-2xl mb-2">{title}</h3>
+                <h3 className="font-bold text-2xl 3xl:text-3xl mb-2">{title}</h3>
                 <div className="flex justify-center mb-2">
                     <div className="w-32 h-1 rounded-full bg-blur-purple"></div>
                 </div>
-                <p className="text-white-600 text-sm">
+                <p className="text-white-600 text-lg 3xl:text-xl">
                     {content}
                 </p>
             </div>
