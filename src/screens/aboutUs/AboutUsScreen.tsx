@@ -1,10 +1,34 @@
+import { aboutUsImg1, aboutUsImg2, aboutUsImg3 } from '../../assets/images';
+
+import AboutUsBanner from "../../components/AboutUsBanner";
+import AboutUsSection from "../../components/AboutUsSection";
+import strings from "../../constants/strings";
 
 const AboutUsScreen = () => {
-
-
     return (
-        <div className="flex flex-col w-screen h-screen overflow-auto bg-custom-purple pt-[100px]">
-            <p className="text-white px-20">About Us</p>
+        <div className="flex flex-col">
+            <AboutUsBanner />
+            <AboutUsSection
+                title={strings.aboutUsTittle1}
+                content={strings.aboutUsContent1}
+                imageUrl={aboutUsImg1}
+                background={false}
+                reverse={false}
+            />
+            <AboutUsSection
+                title={strings.aboutUsTittle2}
+                content={strings.aboutUsContent2}
+                imageUrl={aboutUsImg2}
+                background={true}
+                reverse={true}
+            />
+            <AboutUsSection
+                title={strings.aboutUsTittle3}
+                content={strings.aboutUsContent3}
+                imageUrl={aboutUsImg3}
+                background={false}
+                reverse={false}
+            />
         </div>
     );
 };

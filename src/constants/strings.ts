@@ -7,6 +7,12 @@ const strings = {
     servicesSectionTittle: "Servicios",
     alliesSectionTittle: "Emisoras Vinculadas",
 
+    bannerTittle: "Conoce",
+    bannerSubtittle: "La experiencia Xtuner!",
+
+    aboutUsBannerTittle: "Acerca de nosotros",
+    aboutUsBannerSubtittle: "Apasionados por unirte con los que quieres",
+
     cardTitle1: "Lorem ipsum dolor sit",
     cardContent1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis, sapien lectus placerat. A, metus varius rhoncus, mattis.",
 
@@ -15,6 +21,16 @@ const strings = {
 
     cardTitle3: "Lorem ipsum dolor sit",
     cardContent3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis, sapien lectus placerat. A, metus varius rhoncus, mattis.",
+
+    aboutUsTittle1: "Buscamos llevar la experiencia radial a otro nivel enfocandonos en oyente",
+    aboutUsContent1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet convallis vulputate volutpat enim fames etiam penatibus vestibulum. Id justo viverra porttitor facilisi placerat. Morbi ultricies egestas arcu, auctor ut. Laoreet nunc faucibus ac hendrerit orci elementum tortor. Id habitant sit maecenas ipsum eu tincidunt placerat.",
+
+    aboutUsTittle2: "Un equipo que cree en el poder de la radio y la tegnologia",
+    aboutUsContent2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet convallis vulputate volutpat enim fames etiam penatibus vestibulum. Id justo viverra porttitor facilisi placerat. Morbi ultricies egestas arcu, auctor ut. Laoreet nunc faucibus ac hendrerit orci elementum tortor. Id habitant sit maecenas ipsum eu tincidunt placerat.",
+
+    aboutUsTittle3: "Creemos que la dedicación, compromiso y empatía son la formular del exito",
+    aboutUsContent3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet convallis vulputate volutpat enim fames etiam penatibus vestibulum. Id justo viverra porttitor facilisi placerat. Morbi ultricies egestas arcu, auctor ut. Laoreet nunc faucibus ac hendrerit orci elementum tortor. Id habitant sit maecenas ipsum eu tincidunt placerat.",
+
 
     downloadTittle: "Descarga Nuestra App!",
     servicesTittle: "Más acerca de los tuyos",
@@ -27,7 +43,8 @@ const strings = {
     downloadHere: "Descarga Aquí",
 
     altForDowloadSection: "phones with xtuner app on them",
-    altForBannerection: "girl with headphones",    
+    altForBannerSection: "girl with headphones",
+    altForXtunerServices: "xtuner services",
 
     home: "Inicio",
     aboutUs: "Quiénes somos",

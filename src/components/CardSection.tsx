@@ -16,7 +16,6 @@ const CardSection: React.FC<CardSectionProps> = ({ sectionTitle, cardsData }) =>
     const dotsArray = new Array(12).fill(null);
 
     return (
-
         <div className="bg-dark-blue text-white py-12 px-4">
             <div className="max-w-screen-xl mx-auto">
                 <DotTittle sectionTitle={sectionTitle} />

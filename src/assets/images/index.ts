@@ -14,6 +14,12 @@ import los40 from './los40.png';
 import olimpica from './olimpica.png'; 
 import radioactiva from './radioactiva.png'; 
 import vibra from './vibra.png'; 
+import aboutUsBanner from './about.us.banner.png';
+import aboutUsBackground from './about.us.background.png';
+import backgroundAboutUsSection from './background.about.us.png';
+import aboutUsImg1 from './about.us.img.1.png'; 
+import aboutUsImg2 from './about.us.img.2.png'; 
+import aboutUsImg3 from './about.us.img.3.png'; 
 
 // Exporting images
 export {
@@ -32,4 +38,10 @@ export {
     olimpica,
     radioactiva,
     vibra,
+    aboutUsBanner,
+    aboutUsBackground,
+    backgroundAboutUsSection,
+    aboutUsImg1,
+    aboutUsImg2,
+    aboutUsImg3,
 };
