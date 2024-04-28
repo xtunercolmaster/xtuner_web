@@ -23,10 +23,19 @@ const NavMenu: React.FC<NavMenuProps> = ({ }) => {
     ]);
 
     const updateMenuSelection = (currentRoute: string) => {
-        const updatedMenuData = menuData.map(item => ({
+        let updatedMenuData = menuData.map(item => ({
             ...item,
             isSelected: item.route === currentRoute
         }));
+
+        const isAnySelected = updatedMenuData.some(item => item.isSelected);
+        if (!isAnySelected) {
+            updatedMenuData = updatedMenuData.map(item => ({
+                ...item,
+                isSelected: item.route === "home"
+            }));
+        }
+
         setMenuData(updatedMenuData);
     };
 
@@ -42,8 +51,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ }) => {
 
 
     return (
-        <nav className='absolute'>
-
+        <nav className='absolute bg-gradient-to-b from-dark-blue to-transparent'>
             <div className="flex flex-row w-screen pt-[20px] px-[120px] items-center justify-between">
                 <img className='w-[180px] h-[48px]' src={logo1} alt="NF" />
                 <div className='flex flex-row gap-20 items-center'>

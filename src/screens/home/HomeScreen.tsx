@@ -6,7 +6,6 @@ import CardSection from '../../components/CardSection';
 import DownloadSection from '../../components/DownloadSection';
 import ServicesSection from '../../components/ServicesSection';
 import AlliesSection from '../../components/AlliesSection';
-import Footer from '../../components/Footer';
 
 const HomeScreen = () => {
 
@@ -29,7 +28,7 @@ const HomeScreen = () => {
     ];
 
     return (
-        <div className="flex flex-col h-screen w-screen overflow-auto">
+        <div className="flex flex-col">
             <Banner />
             <CardSection
                 sectionTitle={strings.cardSectionTittle}
@@ -42,7 +41,7 @@ const HomeScreen = () => {
             <AlliesSection 
                 sectionTitle={strings.alliesSectionTittle}
             />
-            <Footer />
+           
         </div>
     );
 };
