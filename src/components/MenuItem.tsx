@@ -25,8 +25,8 @@ const MenuItem: React.FC<MenuItemProps> = ({ item, onClickItem }) => {
     return (
         <button className='' onClick={() => handleOnClickItem(item)}>
             <div className='flex flex-col gap-[8px]'>
-                <p className={`text-xl text-white ${item.isSelected ? 'font-bold' : 'font-normal'}`}>{item.name}</p>
-                {item.isSelected && <div className='w-full h-[4px] bg-secondary-purple rounded' />}
+                <p className={`text-xl text-left text-white ${item.isSelected ? 'font-bold' : 'font-normal'}`}>{item.name}</p>
+                {item.isSelected && <div className='hidden md:flex w-full md:h-[4px] bg-secondary-purple rounded' />}
             </div>
         </button>
     );
