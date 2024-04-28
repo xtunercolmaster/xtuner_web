@@ -1,4 +1,4 @@
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
@@ -7,8 +7,18 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { logo1 } from '../assets/images';
 
 import strings from '../constants/strings';
+import { menuList } from '../constants/data';
+import { MenuItemData } from './MenuItem';
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  const navigateToScreen = (route: string) => {
+    navigate(route);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="bg-gradient-to-b from-dark-blue to-custom-purple text-white p-4">
       <div className="container mx-auto w-[90%] md:w-[85%] 3xl:w-[80%]">
@@ -21,11 +31,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row w-full">
           {/* First column */}
           <div className="flex flex-col w-full md:w-3/12 space-y-2 md:space-y-4 text-lg md:text-2xl mb-4 md:mb-16">
-            <div>{strings.home}</div>
-            <div>{strings.aboutUs}</div>
-            <div>{strings.services}</div>
-            <div>{strings.allies}</div>
-            <div>{strings.contactUs}</div>
+            {menuList.map((item: MenuItemData) => (
+              <button key={item.id} className='text-left' onClick={() => {
+                navigateToScreen(item.route);
+              }}>
+                {item.name}
+              </button>
+            ))}
           </div>
 
           {/* Second column */}

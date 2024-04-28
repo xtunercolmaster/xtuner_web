@@ -7,25 +7,16 @@ import { IoCloseCircleOutline } from "react-icons/io5";
 
 import { logo1 } from '../assets/images';
 import MenuItem, { MenuItemData } from './MenuItem';
-import strings from '../constants/strings';
+import { menuList } from '../constants/data';
 
-
-interface NavMenuProps { }
-
-const NavMenu: React.FC<NavMenuProps> = ({ }) => {
+const NavMenu = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const [menuData, setMenuData] = useState([
-        { id: 1, name: strings.home, route: "home", isSelected: true },
-        { id: 2, name: strings.aboutUs, route: "aboutus", isSelected: false },
-        { id: 3, name: strings.services, route: "services", isSelected: false },
-        { id: 4, name: strings.allies, route: "allies", isSelected: false },
-        { id: 5, name: strings.contactUs, route: "contactus", isSelected: false },
-    ]);
+    const [menuData, setMenuData] = useState(menuList);
 
     const updateMenuSelection = (currentRoute: string) => {
         let updatedMenuData = menuData.map(item => ({
@@ -54,11 +45,9 @@ const NavMenu: React.FC<NavMenuProps> = ({ }) => {
         navigate(route);
     };
 
-
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
-
 
     return (
 
