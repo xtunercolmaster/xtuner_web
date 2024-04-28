@@ -17,7 +17,7 @@ const AboutUsBanner = () => {
             {/* Image Section */}
             <div className="mb-8 2xl:mb-0 2xl:flex-1 flex justify-center items-center w-full lg:pr-10 lg:pt-10 3xl:pr-16 3xl:pt-12">
                 <div className="xl:h-90 overflow-hidden">
-                    <img src={aboutUsBanner} alt="xtuner services" className="object-cover w-full h-full" />
+                    <img src={aboutUsBanner} alt={strings.altForAboutUsBanner} className="object-cover w-full h-full" />
                 </div>
             </div>
         </div>

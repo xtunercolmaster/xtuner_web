@@ -5,11 +5,12 @@ interface AboutUsSectionProps {
     title: string;
     content: string;
     imageUrl: string;
+    alt: string;
     background: boolean;
     reverse: boolean;
 }
 
-const AboutUsSection: React.FC<AboutUsSectionProps> =  ({title, content, imageUrl, background = false, reverse = false}) => {
+const AboutUsSection: React.FC<AboutUsSectionProps> =  ({title, content, imageUrl, alt, background = false, reverse = false}) => {
     const dotsArray = new Array(12).fill(null);
     const flexDirectionClass = reverse ? 'lg:flex-row-reverse' : 'lg:flex-row';
     const paddingContent = reverse ? 'xl:pr-20 3xl:pr-28' : 'xl:pl-20 3xl:pl-28';
@@ -35,7 +36,7 @@ const AboutUsSection: React.FC<AboutUsSectionProps> =  ({title, content, imageUr
         {/* Image Section */}
         <div className="mb-8 2xl:mb-0 2xl:flex-1 flex justify-center items-center">
             <div className="xl:h-90 overflow-hidden">
-                <img src={imageUrl} alt="About Us" className="object-cover h-[500px] aspect-square rounded-lg" />
+                <img src={imageUrl} alt={alt} className="object-cover h-[500px] aspect-square rounded-lg" />
             </div>
         </div>
     </div>

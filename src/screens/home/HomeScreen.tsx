@@ -14,16 +14,19 @@ const HomeScreen = () => {
             title: strings.cardTitle1,
             content: strings.cardTitle1,
             imageUrl: cardImg1,
+            alt: strings.cardAlt1,
         },
         {
             title: strings.cardTitle2,
             content: strings.cardTitle2,
             imageUrl: cardImg2,
+            alt: strings.cardAlt2,
         },
         {
             title: strings.cardTitle3,
             content: strings.cardTitle3,
             imageUrl: cardImg3,
+            alt: strings.cardAlt3,
         },
     ];
 

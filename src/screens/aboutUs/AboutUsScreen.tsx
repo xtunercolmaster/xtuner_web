@@ -12,6 +12,7 @@ const AboutUsScreen = () => {
                 title={strings.aboutUsTittle1}
                 content={strings.aboutUsContent1}
                 imageUrl={aboutUsImg1}
+                alt={strings.altAboutUs1}
                 background={false}
                 reverse={false}
             />
@@ -19,6 +20,7 @@ const AboutUsScreen = () => {
                 title={strings.aboutUsTittle2}
                 content={strings.aboutUsContent2}
                 imageUrl={aboutUsImg2}
+                alt={strings.altAboutUs2}
                 background={true}
                 reverse={true}
             />
@@ -26,6 +28,7 @@ const AboutUsScreen = () => {
                 title={strings.aboutUsTittle3}
                 content={strings.aboutUsContent3}
                 imageUrl={aboutUsImg3}
+                alt={strings.altAboutUs3}
                 background={false}
                 reverse={false}
             />

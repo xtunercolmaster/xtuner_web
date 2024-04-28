@@ -8,6 +8,7 @@ interface CardSectionProps {
         title: string;
         content: string;
         imageUrl: string;
+        alt: string;
     }[];
 }
 
@@ -26,6 +27,7 @@ const CardSection: React.FC<CardSectionProps> = ({ sectionTitle, cardsData }) =>
                             title={card.title}
                             content={card.content}
                             imageUrl={card.imageUrl}
+                            alt={card.alt}
                         />
                     ))}
                 </div>
