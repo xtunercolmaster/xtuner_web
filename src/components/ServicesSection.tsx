@@ -22,8 +22,8 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ sectionTitle }) => {
 
                 {/* Image Section */}
                 <div className="mb-8 lg:ml-16 xl:ml-[130px] 2xl:mb-0 2xl:flex-1 flex justify-center items-center">
-                    <div className="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px] 2xl:w-[500px] 2xl:h-[500px] rounded-full overflow-hidden">
-                        <img src={serviceImg} alt={strings.altForXtunerServices} className="object-cover w-full h-full" />
+                    <div className="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px] 2xl:w-[500px] 2xl:h-[500px] overflow-hidden">
+                        <img src={serviceImg} alt={strings.altForXtunerServices} className="object-cover" />
                     </div>
                 </div>
 

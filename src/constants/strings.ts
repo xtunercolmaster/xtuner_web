@@ -13,6 +13,9 @@ const strings = {
     aboutUsBannerTittle: "Acerca de nosotros",
     aboutUsBannerSubtittle: "Apasionados por unirte con los que quieres",
 
+    ServicesBannerTittle: "Servicios",
+    ServicesBannerSubtittle: "Tus meciones 100% personalizadas en un solo lugar",
+
     cardTitle1: "Lorem ipsum dolor sit",
     cardContent1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis, sapien lectus placerat. A, metus varius rhoncus, mattis.",
     cardAlt1: "couple with headphones looking at a phone",   
@@ -23,7 +26,19 @@ const strings = {
 
     cardTitle3: "Lorem ipsum dolor sit",
     cardContent3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis, sapien lectus placerat. A, metus varius rhoncus, mattis.",
-    cardAlt3: "girl in a radio station listening to music",   
+    cardAlt3: "girl in a radio station listening to music",
+    
+    cardIconTittle1: "Seguridad",
+    cardIconContent1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis,",
+    cardIconAlt1: "couple with headphones looking at a phone",   
+
+    cardIconTittle2: "Confidencialidad",
+    cardIconContent2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis,",
+    cardIconAlt2: "girls with speakers dancing",   
+
+    cardIconTittle3: "Servicio 24/7",
+    cardIconContent3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu netus aliquam in orci dolor rhoncus. Eget eget consectetur neque eu id. Mattis suspendisse sagittis,",
+    cardIconAlt3: "girl in a radio station listening to music",
 
     aboutUsTittle1: "Buscamos llevar la experiencia radial a otro nivel enfocandonos en oyente",
     aboutUsContent1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet convallis vulputate volutpat enim fames etiam penatibus vestibulum. Id justo viverra porttitor facilisi placerat. Morbi ultricies egestas arcu, auctor ut. Laoreet nunc faucibus ac hendrerit orci elementum tortor. Id habitant sit maecenas ipsum eu tincidunt placerat.",
@@ -40,10 +55,12 @@ const strings = {
 
     downloadTittle: "Descarga Nuestra App!",
     servicesTittle: "Más acerca de los tuyos",
-
+    offeringTittle: "Que ofrecemos",
+    
     bannerContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet faucibus ipsum sit lacus pulvinar libero pretium. Odio facilisis diam quam donec ipsum. Augue bibendum pellentesque consequat cursus ac.",
     downloadContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet faucibus ipsum sit lacus pulvinar libero pretium. Odio facilisis diam quam donec ipsum. Augue bibendum pellentesque consequat cursus ac.",
     servicesContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet faucibus ipsum sit lacus pulvinar libero pretium. Odio facilisis diam quam donec ipsum. Augue bibendum pellentesque consequat cursus ac.",
+    offeringContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices porta mauris pellentesque tincidunt. A sit ac interdum volutpat convallis pharetra sollicitudin eget urna. Consectetur varius malesuada nunc, turpis viverra turpis est malesuada. Odio facilisis elementum volutpat iaculis in. Amet commodo sollicitudin erat neque, fames. Id quis ultrices ligula risus egestas nisl, donec. Sed ac tellus sed fringilla pulvinar adipiscing a sed.",
 
     knowMore: "Conoce más",
     downloadHere: "Descarga Aquí",
@@ -52,6 +69,7 @@ const strings = {
     altForBannerSection: "girl with headphones",
     altForXtunerServices: "happy couple listening to radio on their phones",
     altForAboutUsBanner: "girl leading a meeting and writing on a board",
+    altForServicesBanner: "girl with headphones smiling",
 
     home: "Inicio",
     aboutUs: "Quiénes somos",

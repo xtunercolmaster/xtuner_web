@@ -19,7 +19,11 @@ import aboutUsBackground from './about.us.background.png';
 import backgroundAboutUsSection from './background.about.us.png';
 import aboutUsImg1 from './about.us.img.1.png'; 
 import aboutUsImg2 from './about.us.img.2.png'; 
-import aboutUsImg3 from './about.us.img.3.png'; 
+import aboutUsImg3 from './about.us.img.3.png';
+import servicesBanner from './services.banner.png';
+import backgroundServicesBanner from './background.services.banner.png'; 
+import cardIcon from './card.icon.png'; 
+import servicesImg from './services.img.png';
 
 // Exporting images
 export {
@@ -44,4 +48,8 @@ export {
     aboutUsImg1,
     aboutUsImg2,
     aboutUsImg3,
+    servicesBanner,
+    backgroundServicesBanner,
+    cardIcon,
+    servicesImg,
 };

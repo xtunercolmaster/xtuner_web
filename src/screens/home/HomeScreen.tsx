@@ -12,21 +12,27 @@ const HomeScreen = () => {
     const cardsData = [
         {
             title: strings.cardTitle1,
-            content: strings.cardTitle1,
+            content: strings.cardContent1,
             imageUrl: cardImg1,
             alt: strings.cardAlt1,
+            shape: 'square' as 'square',
+            imageWidth: "60%",
         },
         {
             title: strings.cardTitle2,
-            content: strings.cardTitle2,
+            content: strings.cardContent2,
             imageUrl: cardImg2,
             alt: strings.cardAlt2,
+            shape: 'square' as 'square',
+            imageWidth: "60%",
         },
         {
             title: strings.cardTitle3,
-            content: strings.cardTitle3,
+            content: strings.cardContent3,
             imageUrl: cardImg3,
             alt: strings.cardAlt3,
+            shape: 'square' as 'square',
+            imageWidth: "60%",
         },
     ];
 
@@ -38,13 +44,13 @@ const HomeScreen = () => {
                 cardsData={cardsData}
             />
             <DownloadSection />
-            <ServicesSection 
+            <ServicesSection
                 sectionTitle={strings.servicesSectionTittle}
             />
-            <AlliesSection 
+            <AlliesSection
                 sectionTitle={strings.alliesSectionTittle}
             />
-           
+
         </div>
     );
 };
