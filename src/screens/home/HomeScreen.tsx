@@ -1,5 +1,5 @@
 
-import { cardImg1, cardImg2, cardImg3 } from '../../assets/images';
+import { benefits1, benefits2, benefits3 } from '../../assets/images';
 import strings from '../../constants/strings';
 import Banner from '../../components/Banner';
 import CardSection from '../../components/CardSection';
@@ -12,7 +12,7 @@ const HomeScreen = () => {
         {
             title: strings.cardTitle1,
             content: strings.cardContent1,
-            imageUrl: cardImg1,
+            imageUrl: benefits1,
             alt: strings.cardAlt1,
             shape: 'square' as 'square',
             imageWidth: "60%",
@@ -20,7 +20,7 @@ const HomeScreen = () => {
         {
             title: strings.cardTitle2,
             content: strings.cardContent2,
-            imageUrl: cardImg2,
+            imageUrl: benefits2,
             alt: strings.cardAlt2,
             shape: 'square' as 'square',
             imageWidth: "60%",
@@ -28,7 +28,7 @@ const HomeScreen = () => {
         {
             title: strings.cardTitle3,
             content: strings.cardContent3,
-            imageUrl: cardImg3,
+            imageUrl: benefits3,
             alt: strings.cardAlt3,
             shape: 'square' as 'square',
             imageWidth: "60%",
@@ -53,4 +53,3 @@ const HomeScreen = () => {
 
 
 export default HomeScreen;
-

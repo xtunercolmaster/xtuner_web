@@ -5,9 +5,10 @@ import banner2 from './banner/banner2.png';
 import banner3 from './banner/banner3.png';
 import backgroundBanner from './background.banner.png';
 import backgroundDownload from './background.download.png';
-import cardImg1 from './card.img.1.png'; 
-import cardImg2 from './card.img.2.png'; 
-import cardImg3 from './card.img.3.png'; 
+
+import benefits1 from './benefits/benefits1.png';
+import benefits2 from './benefits/benefits2.avif';
+import benefits3 from './benefits/benefits3.avif';
 import xtunerApp from './xtuner.app.png';
 import serviceImg from './service.img.png';
 import aboutUsBanner from './about.us.banner.png';
@@ -28,9 +29,9 @@ export {
     banner3,
     backgroundBanner,
     backgroundDownload,
-    cardImg1,
-    cardImg2,
-    cardImg3,
+    benefits1,
+    benefits2,
+    benefits3,
     xtunerApp,
     serviceImg,
     aboutUsBanner,
