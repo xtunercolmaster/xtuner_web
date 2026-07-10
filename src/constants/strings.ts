@@ -2,10 +2,8 @@
 const strings = {
 
     //Login
-    welcomeTitle: "¡Bienvenid@!",
     cardSectionTittle: "Beneficios Xtuner",
     servicesSectionTittle: "Servicios",
-    alliesSectionTittle: "Emisoras Vinculadas",
 
     bannerTittle: "Conoce",
     bannerSubtittle: "La experiencia Xtuner!",
@@ -30,15 +28,12 @@ const strings = {
     
     cardIconTittle1: "Pagos seguros",
     cardIconContent1: "Paga tus menciones y saludos con total tranquilidad. Nuestros pagos están protegidos de principio a fin para que solo te preocupes por lo que quieres decir al aire.",
-    cardIconAlt1: "couple with headphones looking at a phone",
 
     cardIconTittle2: "Precios justos",
     cardIconContent2: "Sin sorpresas ni letras pequeñas. Paga un precio justo y transparente por cada mención y publicidad, con tarifas pensadas para todos los bolsillos.",
-    cardIconAlt2: "girls with speakers dancing",
 
     cardIconTittle3: "Al aire 24/7",
     cardIconContent3: "Tu emisora nunca duerme y nosotros tampoco. Envía saludos, menciones y opiniones a cualquier hora del día, todos los días de la semana.",
-    cardIconAlt3: "girl in a radio station listening to music",
 
     aboutUsTittle1: "Buscamos llevar la experiencia radial a otro nivel enfocándonos en el oyente",
     aboutUsContent1: "En Xtuner ponemos al oyente en el centro de todo. Creamos un puente directo entre tú y las emisoras web, FM y AM para que dejes de ser un simple espectador y te conviertas en protagonista: saluda, opina y haz que suene tu voz.",
@@ -63,7 +58,6 @@ const strings = {
     offeringContent: "Te damos las herramientas para ser parte de la radio, no solo para escucharla. Envía saludos y dedicatorias al aire, contrata menciones y publicidad a un precio justo, comparte tu opinión sobre los temas del momento y conecta directamente con los locutores de tus emisoras favoritas. Todo desde una plataforma sencilla, segura y pensada para acercarte a lo que quieres.",
 
     knowMore: "Conoce más",
-    downloadHere: "Descarga Aquí",
 
     altForDowloadSection: "phones with xtuner app on them",
     altForBannerSection: "girl with headphones",
@@ -74,17 +68,7 @@ const strings = {
     home: "Inicio",
     aboutUs: "Quiénes somos",
     services: "Servicios",
-    allies: "Aliados",
-    contactUs: "Contáctanos",
     followUs: "Síguenos",
-
-    xtunerAddress: "101 Browning Lanec \nCorning, NY 14830",
-    xtunerEmail: "xtunercol@gmail.com",
-    xtunerPhone: "607-937-7303",
-
-    olimpica: "Olimpica Barranquilla",
-    trojaradio: "Troja Radio",
-
 
 }
 export default strings;

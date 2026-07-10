@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { MdOutlineMenu } from "react-icons/md";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
@@ -18,27 +18,29 @@ const NavMenu = () => {
 
     const [menuData, setMenuData] = useState(menuList);
 
-    const updateMenuSelection = (currentRoute: string) => {
-        let updatedMenuData = menuData.map(item => ({
-            ...item,
-            isSelected: item.route === currentRoute
-        }));
-
-        const isAnySelected = updatedMenuData.some(item => item.isSelected);
-        if (!isAnySelected) {
-            updatedMenuData = updatedMenuData.map(item => ({
+    const updateMenuSelection = useCallback((currentRoute: string) => {
+        setMenuData(prevMenuData => {
+            let updatedMenuData = prevMenuData.map(item => ({
                 ...item,
-                isSelected: item.route === "home"
+                isSelected: item.route === currentRoute
             }));
-        }
 
-        setMenuData(updatedMenuData);
-    };
+            const isAnySelected = updatedMenuData.some(item => item.isSelected);
+            if (!isAnySelected) {
+                updatedMenuData = updatedMenuData.map(item => ({
+                    ...item,
+                    isSelected: item.route === "home"
+                }));
+            }
+
+            return updatedMenuData;
+        });
+    }, []);
 
     useEffect(() => {
         const currentRoute = location.pathname.substring(1);
         updateMenuSelection(currentRoute);
-    }, [location.pathname]);
+    }, [location.pathname, updateMenuSelection]);
 
     const navigateToScreen = (route: string) => {
         updateMenuSelection(route);

@@ -8,10 +8,8 @@ import backgroundDownload from './background.download.png';
 import cardImg1 from './card.img.1.png'; 
 import cardImg2 from './card.img.2.png'; 
 import cardImg3 from './card.img.3.png'; 
-import xtunerApp from './xtuner.app.png'; 
-import serviceImg from './service.img.png'; 
-import olimpica from './allies/olimpica.png';
-import trojaradio from './allies/trojaradio.png';
+import xtunerApp from './xtuner.app.png';
+import serviceImg from './service.img.png';
 import aboutUsBanner from './about.us.banner.png';
 import aboutUsBackground from './about.us.background.png';
 import backgroundAboutUsSection from './background.about.us.png';
@@ -20,8 +18,7 @@ import aboutUsImg2 from './about.us.img.2.png';
 import aboutUsImg3 from './about.us.img.3.png';
 import servicesBanner from './services.banner.png';
 import backgroundServicesBanner from './background.services.banner.png'; 
-import cardIcon from './card.icon.png'; 
-import servicesImg from './services.img.png';
+import cardIcon from './card.icon.png';
 
 // Exporting images
 export {
@@ -36,8 +33,6 @@ export {
     cardImg3,
     xtunerApp,
     serviceImg,
-    olimpica,
-    trojaradio,
     aboutUsBanner,
     aboutUsBackground,
     backgroundAboutUsSection,
@@ -47,5 +42,4 @@ export {
     servicesBanner,
     backgroundServicesBanner,
     cardIcon,
-    servicesImg,
 };

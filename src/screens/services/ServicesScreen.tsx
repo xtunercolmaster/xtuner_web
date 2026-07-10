@@ -3,7 +3,6 @@ import strings from "../../constants/strings";
 
 import ServicesBanner from "../../components/ServicesBanner";
 import CardSection from '../../components/CardSection';
-import AboutUsSection from "../../components/AboutUsSection";
 
 const ServicesScreen = () => {
 
