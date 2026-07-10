@@ -67,12 +67,12 @@ const NavMenu = () => {
                         ))}
                     </div>
 
-                    <div className="flex gap-2 md:gap-3 lg:gap-4 text-base md:text-sm lg:text-base xl:text-3xl 3xl:text-4xl text-white">
+                    <div className="flex gap-2 md:gap-3 lg:gap-4 text-3xl md:text-sm lg:text-base xl:text-3xl 3xl:text-4xl text-white">
                         <a href={externalUrls.facebook} target='blank'><FaFacebook /></a>
                         <a href={externalUrls.instagram} target='blank'><FaInstagram /></a>
                     </div>
 
-                    <button className="md:hidden text-2xl text-white" onClick={toggleMobileMenu}>
+                    <button className="md:hidden text-[42px] text-white" onClick={toggleMobileMenu}>
                         {isMobileMenuOpen ? <IoCloseCircleOutline /> : <MdOutlineMenu />}
                     </button>
                 </div>
