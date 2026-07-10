@@ -2,11 +2,11 @@
 const strings = {
 
     //Login
-    cardSectionTittle: "Beneficios Xtuner",
+    cardSectionTittle: "Beneficios XTUNER",
     servicesSectionTittle: "Servicios",
 
     bannerTittle: "Conoce",
-    bannerSubtittle: "La experiencia Xtuner!",
+    bannerSubtittle: "La experiencia XTUNER!",
 
     aboutUsBannerTittle: "Acerca de nosotros",
     aboutUsBannerSubtittle: "Apasionados por unirte con los que quieres",
@@ -19,7 +19,7 @@ const strings = {
     cardAlt1: "couple with headphones looking at a phone",
 
     cardTitle2: "Tu voz, escuchada",
-    cardContent2: "Opina sobre los temas que te importan y haz que tu voz llegue a miles de oyentes. En Xtuner tu opinión no se queda en el aire: se escucha, se comparte y se convierte en conversación.",
+    cardContent2: "Opina sobre los temas que te importan y haz que tu voz llegue a miles de oyentes. En XTUNER tu opinión no se queda en el aire: se escucha, se comparte y se convierte en conversación.",
     cardAlt2: "girls with speakers dancing",
 
     cardTitle3: "Conecta con tus locutores",
@@ -36,7 +36,7 @@ const strings = {
     cardIconContent3: "Tu emisora nunca duerme y nosotros tampoco. Envía saludos, menciones y opiniones a cualquier hora del día, todos los días de la semana.",
 
     aboutUsTittle1: "Buscamos llevar la experiencia radial a otro nivel enfocándonos en el oyente",
-    aboutUsContent1: "En Xtuner ponemos al oyente en el centro de todo. Creamos un puente directo entre tú y las emisoras web, FM y AM para que dejes de ser un simple espectador y te conviertas en protagonista: saluda, opina y haz que suene tu voz.",
+    aboutUsContent1: "En XTUNER ponemos al oyente en el centro de todo. Creamos un puente directo entre tú y las emisoras web, FM y AM para que dejes de ser un simple espectador y te conviertas en protagonista: saluda, opina y haz que suene tu voz.",
 
     aboutUsTittle2: "Un equipo que cree en el poder de la radio y la tecnología",
     aboutUsContent2: "Unimos la magia de la radio de siempre con la tecnología de hoy. Nuestra plataforma acerca a locutores y oyentes como nunca antes, permitiéndote enviar menciones, saludos y opiniones desde tu celular en cuestión de segundos.",
@@ -52,9 +52,9 @@ const strings = {
     servicesTittle: "Más acerca de los tuyos",
     offeringTittle: "Que ofrecemos",
     
-    bannerContent: "Xtuner es la forma más fácil de conectar con la radio que amas. Saluda a los tuyos, opina sobre lo que te mueve y haz que tu mención suene al aire en emisoras web, FM y AM. La radio ahora te escucha a ti.",
-    downloadContent: "Lleva la radio contigo a todas partes. Descarga la app de Xtuner y envía saludos, menciones y opiniones a tus emisoras favoritas desde tu celular, en cualquier momento y desde donde estés.",
-    servicesContent: "Todo lo que necesitas para hacerte escuchar en un solo lugar. Con Xtuner envías saludos, contratas menciones publicitarias, compartes tus opiniones y te conectas con los locutores de tus emisoras aliadas.",
+    bannerContent: "XTUNER es la forma más fácil de conectar con la radio que amas. Saluda a los tuyos, opina sobre lo que te mueve y haz que tu mención suene al aire en emisoras web, FM y AM. La radio ahora te escucha a ti.",
+    downloadContent: "Lleva la radio contigo a todas partes. Descarga la app de XTUNER y envía saludos, menciones y opiniones a tus emisoras favoritas desde tu celular, en cualquier momento y desde donde estés.",
+    servicesContent: "Todo lo que necesitas para hacerte escuchar en un solo lugar. Con XTUNER envías saludos, contratas menciones publicitarias, compartes tus opiniones y te conectas con los locutores de tus emisoras aliadas.",
     offeringContent: "Te damos las herramientas para ser parte de la radio, no solo para escucharla. Envía saludos y dedicatorias al aire, contrata menciones y publicidad a un precio justo, comparte tu opinión sobre los temas del momento y conecta directamente con los locutores de tus emisoras favoritas. Todo desde una plataforma sencilla, segura y pensada para acercarte a lo que quieres.",
 
     knowMore: "Conoce más",
@@ -70,6 +70,9 @@ const strings = {
     services: "Servicios",
     contactUs: "Contáctenos",
     followUs: "Síguenos",
+    termsAndConditions: "Términos y condiciones",
+    termsPageTitle: "Términos y condiciones de uso y política de tratamiento de datos personales",
+    termsPageSubtitle: "XTUNER",
 
 }
 export default strings;

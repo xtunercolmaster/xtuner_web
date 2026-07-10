@@ -11,7 +11,15 @@ const externalUrls = {
     playStore: "https://play.google.com/",
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/",
-    termsAndConditions: "https://example.com/terminos-y-condiciones",
 }
 
-export { menuList, externalUrls }
+const termsDocumentData = {
+    lastUpdatedDate: "10-07-2026",
+    businessName: "XTUNER SAS",
+    taxId: "901.472.344",
+    address: "Cr 19 No. 28 15 Sur",
+    contactEmail: "xtunercol@gmail.com",
+    phone: "3232044505",
+}
+
+export { menuList, externalUrls, termsDocumentData }

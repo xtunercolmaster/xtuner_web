@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="container mx-auto w-[90%] md:w-[85%] 3xl:w-[80%] py-12 md:py-16">
         {/* Brand */}
         <div className="flex flex-col gap-4 mb-10 md:mb-14">
-          <img src={logo1} alt="Xtuner" className="h-12 md:h-14 w-auto self-start" />
+          <img src={logo1} alt="XTUNER" className="h-12 md:h-14 w-auto self-start" />
         </div>
 
         {/* Sections */}
@@ -82,13 +82,16 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-10 md:mt-14 pt-6 border-t border-white/15 text-center text-sm text-white/50 flex flex-col items-center gap-2">
           <a
-            href={externalUrls.termsAndConditions}
-            target="blank"
+            href="/terms"
+            onClick={(event) => {
+              event.preventDefault();
+              navigateToScreen("terms");
+            }}
             className="hover:text-white transition-colors duration-200"
           >
-            Términos y condiciones
+            {strings.termsAndConditions}
           </a>
-          <p>© {new Date().getFullYear()} Xtuner. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} XTUNER. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
