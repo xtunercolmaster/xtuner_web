@@ -9,8 +9,6 @@ import MainScreen from "./screens/main/MainScreen";
 import HomeScreen from "./screens/home/HomeScreen";
 import AboutUsScreen from "./screens/aboutUs/AboutUsScreen";
 import ServicesScreen from "./screens/services/ServicesScreen";
-import AlliesScreen from "./screens/allies/AlliesScreen";
-import ContactUsScreen from "./screens/contactUs/ContactUsScreen";
 
 function App() {
   return (
@@ -21,8 +19,6 @@ function App() {
           <Route path="home" element={<HomeScreen />} />
           <Route path="aboutus" element={<AboutUsScreen />} />
           <Route path="services" element={<ServicesScreen />} />
-          <Route path="allies" element={<AlliesScreen />} />
-          <Route path="contactus" element={<ContactUsScreen />} />
         </Route>
       </Routes>
     </Router>

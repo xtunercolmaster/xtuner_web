@@ -1,11 +1,18 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { banner1, banner2, banner3, backgroundBanner } from '../assets/images';
 import strings from '../constants/strings';
 
 const bannerImages = [banner1, banner2, banner3];
 
 const Banner = () => {
+  const navigate = useNavigate();
   const [currentImage, setCurrentImage] = useState(0);
+
+  const goToServices = () => {
+    navigate('/services');
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,7 +31,7 @@ const Banner = () => {
         <p className="mb-8 text-sm lg:text-base 2xl:text-lg 3xl:text-2xl max-w-md 3xl:max-w-lg">
           {strings.bannerContent}
         </p>
-        <button className="text-xl 3xl:text-3xl bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out w-48 h-14 3xl:w-64 3xl:h-16">
+        <button onClick={goToServices} className="text-xl 3xl:text-3xl bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out w-48 h-14 3xl:w-64 3xl:h-16">
           {strings.knowMore}
         </button>
       </div>

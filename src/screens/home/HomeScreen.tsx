@@ -5,7 +5,6 @@ import Banner from '../../components/Banner';
 import CardSection from '../../components/CardSection';
 import DownloadSection from '../../components/DownloadSection';
 import ServicesSection from '../../components/ServicesSection';
-import AlliesSection from '../../components/AlliesSection';
 
 const HomeScreen = () => {
 
@@ -46,9 +45,6 @@ const HomeScreen = () => {
             <DownloadSection />
             <ServicesSection
                 sectionTitle={strings.servicesSectionTittle}
-            />
-            <AlliesSection
-                sectionTitle={strings.alliesSectionTittle}
             />
 
         </div>

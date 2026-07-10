@@ -1,5 +1,6 @@
 // ServicesSection component with image and text sections displayed next to each other for larger screens
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { serviceImg } from '../assets/images';
 import DotTittle from './DotTittle';
 import strings from '../constants/strings';
@@ -9,6 +10,13 @@ interface ServicesSectionProps {
 }
 
 const ServicesSection: React.FC<ServicesSectionProps> = ({ sectionTitle }) => {
+    const navigate = useNavigate();
+
+    const goToServices = () => {
+        navigate('/services');
+        window.scrollTo(0, 0);
+    };
+
     return (
         <div className="flex flex-col w-full text-white p-8 bg-cover bg-no-repeat bg-dark-blue">
 
@@ -33,7 +41,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ sectionTitle }) => {
                     <p className="mb-8 text-sm lg:text-base xl:text-xl 3xl:text-2xl max-w-md">
                         {strings.servicesContent}
                     </p>
-                    <button className="text-xl xl:text-2xl bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out w-48 h-14 xl:w-56">
+                    <button onClick={goToServices} className="text-xl xl:text-2xl bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out w-48 h-14 xl:w-56">
                         {strings.knowMore}
                     </button>
                 </div>

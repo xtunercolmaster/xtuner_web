@@ -1,5 +1,6 @@
 import { xtunerApp, backgroundDownload } from '../assets/images';
 import strings from '../constants/strings';
+import StoreButtons from './StoreButtons';
 
 const DownloadSection = () => {
     return (
@@ -13,9 +14,7 @@ const DownloadSection = () => {
                 <p className="mb-8 text-sm lg:text-base xl:text-xl 3xl:text-2xl max-w-md">
                     {strings.downloadContent}                
                 </p>
-                <button className="text-xl xl:text-2xl bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out w-48 h-14 xl:w-56">
-                    {strings.downloadHere}
-                </button>
+                <StoreButtons direction="row" />
             </div>
 
             {/* Image Section */}
