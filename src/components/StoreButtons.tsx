@@ -1,4 +1,5 @@
 import { FaGooglePlay, FaApple } from 'react-icons/fa';
+import { externalUrls } from '../constants/data';
 
 interface StoreButtonsProps {
   /** Layout direction of the buttons. Defaults to "col". */
@@ -11,7 +12,8 @@ const StoreButtons: React.FC<StoreButtonsProps> = ({ direction = 'col' }) => {
   return (
     <div className={`flex ${containerDirection} gap-3`}>
       <a
-        href="#"
+        href={externalUrls.playStore}
+        target="blank"
         aria-label="Google Play"
         className="flex w-fit items-center gap-3 rounded-xl border border-white/20 px-4 py-2 hover:bg-white/10 transition-colors duration-200"
       >
@@ -22,7 +24,8 @@ const StoreButtons: React.FC<StoreButtonsProps> = ({ direction = 'col' }) => {
         </div>
       </a>
       <a
-        href="#"
+        href={externalUrls.appStore}
+        target="blank"
         aria-label="App Store"
         className="flex w-fit items-center gap-3 rounded-xl border border-white/20 px-4 py-2 hover:bg-white/10 transition-colors duration-200"
       >

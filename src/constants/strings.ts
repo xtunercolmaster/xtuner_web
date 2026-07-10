@@ -68,6 +68,7 @@ const strings = {
     home: "Inicio",
     aboutUs: "Quiénes somos",
     services: "Servicios",
+    contactUs: "Contáctenos",
     followUs: "Síguenos",
 
 }

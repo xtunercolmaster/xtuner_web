@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { logo1 } from '../assets/images';
 
 import strings from '../constants/strings';
-import { menuList } from '../constants/data';
+import { externalUrls, menuList } from '../constants/data';
 import { MenuItemData } from './MenuItem';
 import StoreButtons from './StoreButtons';
 
@@ -48,10 +48,19 @@ const Footer = () => {
 
           {/* Social */}
           <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-bold">{strings.contactUs}</h3>
+              <a
+                href="mailto:xtunercol@gmail.com"
+                className="text-white/70 hover:text-white transition-colors duration-200 w-fit"
+              >
+                xtunercol@gmail.com
+              </a>
+            </div>
             <h3 className="text-lg font-bold">{strings.followUs}</h3>
             <div className="flex items-center gap-3 text-xl">
               <a
-                href="https://www.facebook.com/"
+                href={externalUrls.facebook}
                 target="blank"
                 aria-label="Facebook"
                 className="flex items-center justify-center h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
@@ -59,7 +68,7 @@ const Footer = () => {
                 <FaFacebook />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href={externalUrls.instagram}
                 target="blank"
                 aria-label="Instagram"
                 className="flex items-center justify-center h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
@@ -71,7 +80,14 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 md:mt-14 pt-6 border-t border-white/15 text-center text-sm text-white/50">
+        <div className="mt-10 md:mt-14 pt-6 border-t border-white/15 text-center text-sm text-white/50 flex flex-col items-center gap-2">
+          <a
+            href={externalUrls.termsAndConditions}
+            target="blank"
+            className="hover:text-white transition-colors duration-200"
+          >
+            Términos y condiciones
+          </a>
           <p>© {new Date().getFullYear()} Xtuner. Todos los derechos reservados.</p>
         </div>
       </div>

@@ -6,4 +6,12 @@ const menuList = [
     { id: 3, name: strings.services, route: "services", isSelected: false },
 ]
 
-export { menuList }
+const externalUrls = {
+    appStore: "https://example.com/app-store",
+    playStore: "https://example.com/play-store",
+    facebook: "https://example.com/facebook",
+    instagram: "https://example.com/instagram",
+    termsAndConditions: "https://example.com/terminos-y-condiciones",
+}
+
+export { menuList, externalUrls }

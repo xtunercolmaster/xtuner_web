@@ -7,7 +7,7 @@ import { IoCloseCircleOutline } from "react-icons/io5";
 
 import { logo1 } from '../assets/images';
 import MenuItem, { MenuItemData } from './MenuItem';
-import { menuList } from '../constants/data';
+import { externalUrls, menuList } from '../constants/data';
 
 const NavMenu = () => {
 
@@ -68,8 +68,8 @@ const NavMenu = () => {
                     </div>
 
                     <div className="flex gap-2 md:gap-3 lg:gap-4 text-base md:text-sm lg:text-base xl:text-3xl 3xl:text-4xl text-white">
-                        <a href="https://www.facebook.com/" target='blank'><FaFacebook /></a>
-                        <a href="https://www.instagram.com/" target='blank'><FaInstagram /></a>
+                        <a href={externalUrls.facebook} target='blank'><FaFacebook /></a>
+                        <a href={externalUrls.instagram} target='blank'><FaInstagram /></a>
                     </div>
                 </div>
 
