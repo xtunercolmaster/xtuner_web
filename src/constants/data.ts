@@ -7,10 +7,10 @@ const menuList = [
 ]
 
 const externalUrls = {
-    appStore: "https://example.com/app-store",
-    playStore: "https://example.com/play-store",
-    facebook: "https://example.com/facebook",
-    instagram: "https://example.com/instagram",
+    appStore: "https://www.apple.com/app-store/",
+    playStore: "https://play.google.com/",
+    facebook: "https://www.facebook.com/",
+    instagram: "https://www.instagram.com/",
     termsAndConditions: "https://example.com/terminos-y-condiciones",
 }
 
