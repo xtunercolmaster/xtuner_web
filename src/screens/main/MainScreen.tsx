@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 
 const MainScreen = () => {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col w-full overflow-x-hidden bg-dark-blue'>
             <NavMenu />
             <Outlet />
             <Footer />

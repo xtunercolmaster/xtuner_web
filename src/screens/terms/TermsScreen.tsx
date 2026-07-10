@@ -184,7 +184,7 @@ const termsSections = [
 
 const TermsScreen = () => {
     return (
-        <main className="bg-white text-dark-blue">
+        <main className="bg-white text-dark-blue overflow-x-hidden">
             <section className="bg-gradient-to-b from-dark-blue to-custom-purple text-white pt-28 md:pt-36 pb-12 md:pb-16">
                 <div className="container mx-auto w-[90%] md:w-[85%] 3xl:w-[80%]">
                     <p className="text-sm md:text-base text-white/70 mb-3">

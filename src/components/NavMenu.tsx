@@ -53,11 +53,11 @@ const NavMenu = () => {
 
     return (
 
-        <nav className='absolute w-full bg-gradient-to-b from-dark-blue to-transparent'>
+        <nav className={`absolute w-full ${isMobileMenuOpen ? 'bg-dark-blue' : 'bg-gradient-to-b from-dark-blue to-transparent'} md:bg-gradient-to-b md:from-dark-blue md:to-transparent`}>
             <div className="flex flex-wrap justify-between items-center px-4 py-3 md:px-10 lg:px-16 xl:px-32">
                 <img className='w-36 md:w-44 lg:w-52' src={logo1} alt="NF" />
 
-                <div className='flex items-center gap-4 md:gap-6 lg:gap-20'>
+                <div className='flex items-center gap-3 md:gap-6 lg:gap-20'>
                     <div className='hidden md:flex flex-row gap-2 md:gap-4 lg:gap-6'>
                         {menuData.map((item: MenuItemData) => (
                             <MenuItem
@@ -71,16 +71,16 @@ const NavMenu = () => {
                         <a href={externalUrls.facebook} target='blank'><FaFacebook /></a>
                         <a href={externalUrls.instagram} target='blank'><FaInstagram /></a>
                     </div>
-                </div>
 
-                <button className="md:hidden text-2xl text-white" onClick={toggleMobileMenu}>
-                    {isMobileMenuOpen ? <IoCloseCircleOutline /> : <MdOutlineMenu />}
-                </button>
+                    <button className="md:hidden text-2xl text-white" onClick={toggleMobileMenu}>
+                        {isMobileMenuOpen ? <IoCloseCircleOutline /> : <MdOutlineMenu />}
+                    </button>
+                </div>
 
             </div>
             {isMobileMenuOpen && (
-                <div className='relative w-full'>
-                    <div className='flex flex-col gap-4 p-4 md:hidden bg-gradient-to-b from-transparent to-dark-blue '>
+                <div className='relative w-full bg-dark-blue'>
+                    <div className='flex flex-col items-center gap-6 px-4 py-6 md:hidden bg-dark-blue'>
                         {menuData.map((item: MenuItemData) => (
                             <MenuItem
                                 key={item.id}
