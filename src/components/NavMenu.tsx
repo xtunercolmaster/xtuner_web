@@ -68,9 +68,6 @@ const NavMenu = () => {
                     <div className="flex gap-2 md:gap-3 lg:gap-4 text-base md:text-sm lg:text-base xl:text-3xl 3xl:text-4xl text-white">
                         <a href="https://www.facebook.com/" target='blank'><FaFacebook /></a>
                         <a href="https://www.instagram.com/" target='blank'><FaInstagram /></a>
-                        <a href="https://twitter.com/" target='blank'><FaTwitter /></a>
-                        <a href="https://www.linkedin.com/" target='blank'><FaLinkedinIn /></a>
-                        <a href="https://www.youtube.com/" target='blank'><FaYoutube /></a>
                     </div>
                 </div>
 

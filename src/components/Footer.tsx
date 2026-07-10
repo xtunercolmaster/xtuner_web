@@ -1,8 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import { CiLocationOn } from "react-icons/ci";
+import { FaFacebook, FaInstagram, FaGooglePlay, FaApple } from 'react-icons/fa';
 import { CiMail } from "react-icons/ci";
-import { IoPhonePortraitOutline } from "react-icons/io5";
 
 import { logo1 } from '../assets/images';
 
@@ -20,64 +18,98 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-dark-blue to-custom-purple text-white p-4">
-      <div className="container mx-auto w-[90%] md:w-[85%] 3xl:w-[80%]">
-        {/* Icon on the top left corner */}
-        <div className="flex w-full mb-8 md:mb-16">
-          <img src={logo1} alt="Logo" className="h-12 md:h-16 w-auto" />
+    <footer className="bg-gradient-to-b from-dark-blue to-custom-purple text-white">
+      <div className="container mx-auto w-[90%] md:w-[85%] 3xl:w-[80%] py-12 md:py-16">
+        {/* Brand */}
+        <div className="flex flex-col gap-4 mb-10 md:mb-14">
+          <img src={logo1} alt="Xtuner" className="h-12 md:h-14 w-auto self-start" />
         </div>
 
-        {/* Two columns layout */}
-        <div className="flex flex-col md:flex-row w-full">
-          {/* First column */}
-          <div className="flex flex-col w-full md:w-3/12 space-y-2 md:space-y-4 text-lg md:text-2xl mb-4 md:mb-16">
+        {/* Sections */}
+        <div className="flex flex-col gap-10 md:flex-row md:justify-between md:gap-8">
+          {/* Navigation */}
+          <nav className="flex flex-col gap-2 text-lg">
             {menuList.map((item: MenuItemData) => (
-              <button key={item.id} className='text-left' onClick={() => {
-                navigateToScreen(item.route);
-              }}>
+              <button
+                key={item.id}
+                className="text-left text-white/70 hover:text-white transition-colors duration-200 w-fit"
+                onClick={() => navigateToScreen(item.route)}
+              >
                 {item.name}
               </button>
             ))}
+          </nav>
+
+          {/* Download app */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-lg font-bold">{strings.downloadTittle}</h3>
+            <div className="flex flex-col gap-3">
+              <a
+                href="#"
+                aria-label="Google Play"
+                className="flex w-fit items-center gap-3 rounded-xl border border-white/20 px-4 py-2 hover:bg-white/10 transition-colors duration-200"
+              >
+                <FaGooglePlay className="text-2xl" />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-[10px] text-white/60 uppercase tracking-wide">Disponible en</span>
+                  <span className="text-sm font-semibold">Google Play</span>
+                </div>
+              </a>
+              <a
+                href="#"
+                aria-label="App Store"
+                className="flex w-fit items-center gap-3 rounded-xl border border-white/20 px-4 py-2 hover:bg-white/10 transition-colors duration-200"
+              >
+                <FaApple className="text-2xl" />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-[10px] text-white/60 uppercase tracking-wide">Descarga en</span>
+                  <span className="text-sm font-semibold">App Store</span>
+                </div>
+              </a>
+            </div>
           </div>
 
-          {/* Second column */}
-          <div className="flex flex-col w-full md:space-y-2 text-lg md:text-xl">
-            {/* First row with sections */}
-            <div className="flex flex-col md:flex-row items-center md:mb-10">
-              <p className="w-full md:w-[20%] text-xl md:text-2xl font-bold">
-                {strings.contactUs}
-              </p>
-              <div className='w-full md:w-[80%] flex flex-col my-5 md:flex-row md:items-center md:justify-between gap-4 md:gap-6'>
-                <div className="flex items-center space-x-2">
-                  <CiLocationOn className='text-4xl md:text-5xl' />
-                  <span className="whitespace-pre-wrap">{strings.xtunerAddress}</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CiMail className='text-xl md:text-5xl font-bold' />
-                  <span>{strings.xtunerEmail}</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <IoPhonePortraitOutline className='text-3xl md:text-4xl font-bold' />
-                  <span>{strings.xtunerPhone}</span>
-                </div>
-              </div>
-            </div>
+          {/* Contact */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-lg font-bold">{strings.contactUs}</h3>
+            <a
+              href={`mailto:${strings.xtunerEmail}`}
+              className="flex items-center gap-3 text-white/70 hover:text-white transition-colors duration-200"
+            >
+              <CiMail className="text-2xl" />
+              <span>{strings.xtunerEmail}</span>
+            </a>
 
-            {/* Second row with two sections */}
-            <div className="flex flex-col md:flex-row">
-              <p className="w-full md:w-[20%] text-xl md:text-2xl font-bold mb-5">{strings.followUs}</p>
-              <div className="flex items-center justify-start mb-10 xl:ml-2 md:justify-end space-x-4 md:space-x-8 text-2xl md:text-3xl">
-                <a href="https://www.facebook.com/" target='blank'><FaFacebook /></a>
-                <a href="https://www.instagram.com/" target='blank'><FaInstagram /></a>
-                <a href="https://twitter.com/" target='blank'><FaTwitter /></a>
-                <a href="https://www.linkedin.com/" target='blank'><FaLinkedinIn /></a>
-                <a href="https://www.youtube.com/" target='blank'><FaYoutube /></a>
-              </div>
+            <p className="mt-2 text-sm font-semibold text-white/50 uppercase tracking-wide">
+              {strings.followUs}
+            </p>
+            <div className="flex items-center gap-3 text-xl">
+              <a
+                href="https://www.facebook.com/"
+                target="blank"
+                aria-label="Facebook"
+                className="flex items-center justify-center h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="blank"
+                aria-label="Instagram"
+                className="flex items-center justify-center h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
+              >
+                <FaInstagram />
+              </a>
             </div>
           </div>
         </div>
+
+        {/* Bottom bar */}
+        <div className="mt-10 md:mt-14 pt-6 border-t border-white/15 text-center text-sm text-white/50">
+          <p>© {new Date().getFullYear()} Xtuner. Todos los derechos reservados.</p>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

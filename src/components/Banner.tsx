@@ -1,7 +1,19 @@
-import { banner1, backgroundBanner } from '../assets/images';
+import { useEffect, useState } from 'react';
+import { banner1, banner2, banner3, backgroundBanner } from '../assets/images';
 import strings from '../constants/strings';
 
+const bannerImages = [banner1, banner2, banner3];
+
 const Banner = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % bannerImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center w-full text-white p-10 lg:p-8 min-h-screen bg-cover bg-no-repeat" style={{ backgroundImage: `url(${backgroundBanner})` }}>
       {/* Text Section */}
@@ -18,12 +30,20 @@ const Banner = () => {
       </div>
 
       {/* Image Section */}
-      <div className="w-[400px] h-[400px] xl:w-[500px] xl:h-[500px] 2xl:w-[700px] 2xl:h-[700px] 3xl:w-[800px] 3xl:h-[800px] relative overflow-hidden mt-4 lg:mt-0 3xl:mr-22 4xl:mr-40">
+      <div className="w-[550px] h-[550px] xl:w-[700px] xl:h-[700px] 2xl:w-[900px] 2xl:h-[900px] 3xl:w-[1100px] 3xl:h-[1100px] relative overflow-hidden mt-4 lg:mt-0 lg:self-end -mb-10 lg:-mb-8 3xl:mr-22 4xl:mr-40">
         <div
           className="absolute top-0 left-0 w-full h-full bg-secondary-purple opacity-50 rounded-full z-0"
           style={{ clipPath: 'circle(35% at 50% 60%)' }}
         ></div>
-        <img src={banner1} alt={strings.altForBannerSection} className="absolute object-cover w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" />
+        {bannerImages.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={strings.altForBannerSection}
+            className={`absolute object-cover object-bottom w-full h-full bottom-0 left-1/2 transform -translate-x-1/2 z-10 transition-opacity duration-1000 ease-in-out ${index === currentImage ? 'opacity-100' : 'opacity-0'}`}
+          />
+        ))}
+        <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-dark-blue to-transparent z-20" />
       </div>
     </div>
   );

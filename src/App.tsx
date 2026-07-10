@@ -1,14 +1,16 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
-import MainScreen from './screens/main/MainScreen';
-import HomeScreen from './screens/home/HomeScreen';
-import AboutUsScreen from './screens/aboutUs/AboutUsScreen';
-import ServicesScreen from './screens/services/ServicesScreen';
-import AlliesScreen from './screens/allies/AlliesScreen';
-import ContactUsScreen from './screens/contactUs/ContactUsScreen';
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import MainScreen from "./screens/main/MainScreen";
+import HomeScreen from "./screens/home/HomeScreen";
+import AboutUsScreen from "./screens/aboutUs/AboutUsScreen";
+import ServicesScreen from "./screens/services/ServicesScreen";
+import AlliesScreen from "./screens/allies/AlliesScreen";
+import ContactUsScreen from "./screens/contactUs/ContactUsScreen";
 
 function App() {
   return (

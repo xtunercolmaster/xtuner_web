@@ -79,14 +79,11 @@ const strings = {
     followUs: "Síguenos",
 
     xtunerAddress: "101 Browning Lanec \nCorning, NY 14830",
-    xtunerEmail: "xtunerCOL@gmail.com",
+    xtunerEmail: "xtunercol@gmail.com",
     xtunerPhone: "607-937-7303",
 
-    candela: "Candela",
-    vibra: "Vibra",
-    los40: "Los 40",
     olimpica: "Olimpica Barranquilla",
-    radioactiva: "Radioacktiva",
+    trojaradio: "Troja Radio",
 
 
 }
