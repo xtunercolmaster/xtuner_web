@@ -12,7 +12,7 @@ const strings = {
     aboutUsBannerSubtittle: "Apasionados por unirte con los que quieres",
 
     ServicesBannerTittle: "Servicios",
-    ServicesBannerSubtittle: "Tus meciones 100% personalizadas en un solo lugar",
+    ServicesBannerSubtittle: "Tus menciones o pautas 100% personalizadas en un solo lugar",
 
     cardTitle1: "Saluda y sorprende al aire",
     cardContent1: "Envía un saludo, una felicitación o una dedicatoria y hazla sonar en tu emisora favorita, ya sea web, FM o AM. Sorprende a quienes quieres haciendo que su nombre suene al aire desde donde estés.",
